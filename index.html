@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <title>Animation</title>
 </head>
+
 <body>
     <div class="w-full bg-zinc-900">
-        <div class="parent relative top-0 left-0 w-full h-[700vh]">
+        <div class="parent relative top-0 left-0 w-full h-[1400vh]">
             <div class="w-full sticky top-0 left-0 h-screen">
                 <canvas class="w-full h-screen" id="frame"></canvas>
+                <!--  -->
+                <div class="absolute textParent1 z-[2] text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h1 class="leading-20 font-[600] text-6xl">
+                        Welcome To
+                    </h1>
+                    <h1 class="text-4xl font-[400]">
+                        Animation With Scroll
+                    </h1>
+                </div>
+                <!-- -->
+                <div class="absolute textParent2 z-[2] text-black bottom-10 w-1/2 left-10 opacity-0">
+                    <h1 class="leading-20 font-[500] text-5xl">
+                        Using Gsap
+                    </h1>
+                </div>
+                <!--  -->
+                <div class="absolute textParent3 opacity-0 z-[2] text-black bottom-10 w-1/2 right-10 text-right">
+                    <h1 class="leading-20 font-[600] text-6xl">
+                        By Atul Goyal
+                    </h1>
+                </div>
+                <!--  -->
+                <div class="absolute textParent4 z-[2] text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center opacity-0">
+                    <h1 class="leading-20 font-[600] text-6xl">
+                        Bye Bye
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
 <script src="https://atul22gcdns.pages.dev/tailwindcss-cdn%403.4.10/tailwindcss.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
+
 </html>
